@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /404.html
+Disallow: /post.html
+Sitemap: https://virtualitypage.github.io/jigokudani.net/sitemap.xml

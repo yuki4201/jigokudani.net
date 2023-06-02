@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>地獄谷</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F00MC1WG8L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-F00MC1WG8L');
+    </script>
+  </head>
+  <body>
+    <main class="main-contents">
+      <script src="./neon.js"></script>
+      <div class="infoArea">
+        <h2>
+          <img src="./img/jigokudani.png" alt="地獄谷">
+        </h2>
+        <p>阪神野田駅または地下鉄野田阪神駅を出て徒歩5分<br>そこには大阪市福島区吉野の通称<br>「地獄谷」という呑み屋街があります。<br><br>古民家と酒場が共存するこの一角は<br>昭和の雰囲気を色濃く残すレトロな呑み屋街として、<br>今もその姿を現代に語り継いでいます。</p>
+      </div>
+      <div class="mapArea">
+        <x-sign>
+          <p style="text-align: center;">LOCAL MAP</p>
+        </x-sign>
+        <div class="map">
+          <img src="./img/map.png" alt="locale MAP">
+        </div>
+      </div>
+      <article>
+        <table class="content-bottom">
+          <tr>
+            <td>
+              <a class="btn-play-info" onclick="information()">インフォメーション</a>
+            </td>
+          </tr>
+        </table>
+      </article>
+      <div class="storeArea">
+        <ul class="storeList">
+          <li>
+            <a href="./detail/akihisa" target="_blank">
+              <div class="pict">
+                <img src="./img/akihisa.png" alt="串揚げ居酒屋 秋久">
+              </div>
+              <dl>
+                <dt>串揚げ居酒屋<br>秋久</dt>
+                <dd>串揚げ</dd>
+                <dd>串カツ</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/miki" target="_blank">
+              <div class="pict">
+                <img src="./img/miki.png" alt="味希 野田阪神店">
+              </div>
+              <dl>
+                <dt>味希 野田阪神店</dt>
+                <dd>焼肉</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/deuce_mix_kitchen_bakery" target="_blank">
+              <div class="pict">
+                <img src="./img/deuce_mix.png" alt="デュース ミックス キッチン ベーカリー">
+              </div>
+              <dl>
+                <dt>デュース ミックス<br>キッチン ベーカリー</dt>
+                <dd>パン</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/zen" target="_blank">
+              <div class="pict">
+                <img src="./img/zen.png" alt="串焼きダイニング 善">
+              </div>
+              <dl>
+                <dt>串焼きダイニング 善</dt>
+                <dd>焼鳥</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/maharo" target="_blank">
+              <div class="pict">
+                <img src="./img/maharo.png" alt="スタンド酒場 まはろ">
+              </div>
+              <dl>
+                <dt>スタンド酒場<br>まはろ</dt>
+                <dd>立ち呑み居酒屋</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/koshou" target="_blank">
+              <div class="pict">
+                <img src="./img/koshou.png" alt="粉匠">
+              </div>
+              <dl>
+                <dt>粉匠</dt>
+                <dd>居酒屋</dd>
+                <dd>お好み焼き</dd>
+                <dd>鉄板焼き</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/goat-chan" target="_blank">
+              <div class="pict">
+                <img src="./img/goat-chan.png" alt="海鮮居酒屋 やぎちゃん">
+              </div>
+              <dl>
+                <dt>海鮮居酒屋<br>やぎちゃん</dt>
+                <dd>居酒屋</dd>
+                <dd>魚介・海鮮料理</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/tousen" target="_blank">
+              <div class="pict">
+                <img src="./img/tousen.png" alt="中川酒造 透泉">
+              </div>
+              <dl>
+                <dt>中川酒造 透泉</dt>
+                <dd>居酒屋</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/pagu_chan" target="_blank">
+              <div class="pict">
+                <img src="./img/pagu_chan.png" alt="立呑 ぱぐちゃん">
+              </div>
+              <dl>
+                <dt>立呑 ぱぐちゃん</dt>
+                <dd>立ち呑み居酒屋</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/otahuku" target="_blank">
+              <div class="pict">
+                <img src="./img/otahuku.png" alt="大衆酒場 お多福">
+              </div>
+              <dl>
+                <dt>大衆酒場 お多福</dt>
+                <dd>居酒屋</dd>
+                <dd>魚介・海鮮料理</dd>
+                <dd>天ぷら</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/senior_club" target="_blank">
+              <div class="pict">
+                <img src="./img/senior_club.png" alt="シニア倶楽部遊時">
+              </div>
+              <dl>
+                <dt>シニア倶楽部遊時</dt>
+                <dd>スナック</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/toyo" target="_blank">
+              <div class="pict">
+                <img src="./img/toyo.png" alt="スタンド とよ">
+              </div>
+              <dl>
+                <dt>スタンド とよ</dt>
+                <dd>居酒屋</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/karon" target="_blank">
+              <div class="pict">
+                <img src="./img/karon.png" alt="酒場カロン">
+              </div>
+              <dl>
+                <dt>酒場カロン</dt>
+                <dd>立ち呑み居酒屋</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/saki" target="_blank">
+              <div class="pict">
+                <img src="./img/saki.png" alt="スナック咲">
+              </div>
+              <dl>
+                <dt>スナック咲</dt>
+                <dd>スナック</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/maruei" target="_blank">
+              <div class="pict">
+                <img src="./img/maruei.png" alt="マルエイ">
+              </div>
+              <dl>
+                <dt>マルエイ</dt>
+                <dd>居酒屋</dd>
+                <dd>おでん</dd>
+                <dd>鉄板焼き</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <!-- <a href="./detail/kokure" target="_blank"> -->
+              <div class="pict">
+                <img src="./img/404.png" alt="立呑みコクレ">
+              </div>
+              <dl>
+                <dt>立呑みコクレ</dt>
+                <!-- <dd>立ち呑みバー</dd> -->
+                <div class="ddd">休業中</div>
+              </dl>
+            <!-- </a> -->
+          </li>
+          <li>
+            <a href="./detail/sakura_next" target="_blank">
+              <div class="pict">
+                <img src="./img/sakura_next.png" alt="桜ねくすと">
+              </div>
+              <dl>
+                <dt>桜ねくすと</dt>
+                <dd>居酒屋</dd>
+                <dd>中華料理</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/hokkoriba-ru_hoshiboshi" target="_blank">
+              <div class="pict">
+                <img src="./img/hokkoriba-ru_hoshiboshi.png" alt="ほっこりばーる ほしぼし">
+              </div>
+              <dl>
+                <dt>ほっこりばーる<br>ほしぼし</dt>
+                <dd>バー</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/sankaku" target="_blank">
+              <div class="pict">
+                <img src="./img/sankaku.png" alt="地獄谷 餃子さんかく">
+              </div>
+              <dl>
+                <dt>地獄谷 餃子さんかく</dt>
+                <dd>餃子</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/aira" target="_blank">
+              <div class="pict">
+                <img src="./img/aira.png" alt="遊びBAR アイラ">
+              </div>
+              <dl>
+                <dt>遊びBAR アイラ</dt>
+                <dd>カラオケバー</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/hanare" target="_blank">
+              <div class="pict">
+                <img src="./img/hanare.png" alt="BARハナレ">
+              </div>
+              <dl>
+                <dt>BARハナレ</dt>
+                <dd>カラオケバー</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/ichimaru_ramen" target="_blank">
+              <div class="pict">
+                <img src="./img/ichimaru.png" alt="いちまるらーめん">
+              </div>
+              <dl>
+                <dt>いちまるらーめん</dt>
+                <dd>ラーメン</dd>
+                <dd>居酒屋・ダイニングバー</dd>
+                <dd>油そば</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/daigaku" target="_blank">
+              <div class="pict">
+                <img src="./img/daigaku.png" alt="ダイガク">
+              </div>
+              <dl>
+                <dt>酒場ダイガク</dt>
+                <dd>居酒屋</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/tetsukabuto" target="_blank">
+              <div class="pict">
+                <img src="./img/tetsukabuto.png" alt="炭火焼鳥 鉄カブト">
+              </div>
+              <dl>
+                <dt>炭火焼鳥 鉄カブト</dt>
+                <dd>焼鳥</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/the_zoo" target="_blank">
+              <div class="pict">
+                <img src="./img/the_zoo.png" alt="THE ZOO">
+              </div>
+              <dl>
+                <dt>THE ZOO</dt>
+                <dd>バー</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/prosciutteria_epsilon" target="_blank">
+              <div class="pict">
+                <img src="./img/prosciutteria_epsilon.png" alt="PROSCIUTTERIA Υ">
+              </div>
+              <dl>
+                <dt>PROSCIUTTERIA Υ</dt>
+                <dd>イタリアン</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/soyogi_an" target="_blank">
+              <div class="pict">
+                <img src="./img/404.png" alt="茶葉料理 おばんざい そよぎ庵">
+              </div>
+              <dl>
+                <dt>茶葉料理 おばんざい<br>そよぎ庵</dt>
+                <dd>茶葉料理</dd>
+                <dd>バー</dd>
+                <div class="ddd">画像準備中</div>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/move_on" target="_blank">
+              <div class="pict">
+                <img src="./img/move_on.png" alt="move on">
+              </div>
+              <dl>
+                <dt>move on</dt>
+                <dd>-----</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/goemon" target="_blank">
+              <div class="pict">
+                <img src="./img/404.png" alt="五右衛門">
+              </div>
+              <dl>
+                <dt>五右衛門</dt>
+                <dd>カレー</dd>
+                <div class="ddd">画像準備中</div>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/tsu-yan" target="_blank">
+              <div class="pict">
+                <img src="./img/tsu-yan.png" alt="jigokudani karaoke bar つーやん">
+              </div>
+              <dl>
+                <dt>jigokudani karaoke bar<br>つーやん</dt>
+                <dd>カラオケバー</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <!-- <a href="./detail/mimi" target="_blank"> -->
+              <div class="pict">
+                <img src="./img/404.png" alt="FAiMiRU MiMi">
+              </div>
+              <dl>
+                <dt>FAiMiRU MiMi</dt>
+                <!-- <dd>カラオケバー</dd> -->
+                <div class="ddd">休業中</div>
+              </dl>
+            <!-- </a> -->
+          </li>
+          <li>
+            <a href="./detail/nagomi" target="_blank">
+              <div class="pict">
+                <img src="./img/nagomi.png" alt="呑処 なごみ">
+              </div>
+              <dl>
+                <dt>呑処 なごみ</dt>
+                <dd>居酒屋</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/shiragiku" target="_blank">
+              <div class="pict">
+                <img src="./img/shiragiku.png" alt="おとーり酒場　白菊">
+              </div>
+              <dl>
+                <dt>おとーり酒場　白菊</dt>
+                <dd>居酒屋</dd>
+                <dd>沖縄料理</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/utanoya" target="_blank">
+              <div class="pict">
+                <img src="./img/utanoya.png" alt="うたのや">
+              </div>
+              <dl>
+                <dt>うたのや</dt>
+                <dd>カラオケバー</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/ai" target="_blank">
+              <div class="pict">
+                <img src="./img/ai.png" alt="スナック愛">
+              </div>
+              <dl>
+                <dt>スナック愛</dt>
+                <dd>スナック</dd>
+                <div class="ddd">画像準備中</div>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/yururi" target="_blank">
+              <div class="pict">
+                <img src="./img/yururi.png" alt="酒縁　ゆるり">
+              </div>
+              <dl>
+                <dt>酒縁　ゆるり</dt>
+                <dd>日本酒バー</dd>
+                <dd>郷土料理</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/kouhuku" target="_blank">
+              <div class="pict">
+                <img src="./img/kouhuku.png" alt="こうふく">
+              </div>
+              <dl>
+                <dt>こうふく</dt>
+                <dd>お好み焼き</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/tsu-tan" target="_blank">
+              <div class="pict">
+                <img src="./img/tsu-tan.png" alt="地獄谷 串焼つーたん">
+              </div>
+              <dl>
+                <dt>地獄谷 串焼つーたん</dt>
+                <dd>立ち呑み居酒屋</dd>
+                <dd>もつ料理</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/hermanos" target="_blank">
+              <div class="pict">
+                <img src="./img/404.png" alt="地獄谷エルマノスカレー">
+              </div>
+              <dl>
+                <dt>地獄谷エルマノスカレー</dt>
+                <dd>カレー</dd>
+                <div class="ddd">画像準備中</div>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/meido_bar" target="_blank">
+              <div class="pict">
+                <img src="./img/meido_bar.png" alt="地獄谷冥土バー">
+              </div>
+              <dl>
+                <dt>地獄谷冥土バー</dt>
+                <dd>バー</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/terimi" target="_blank">
+              <div class="pict">
+                <img src="./img/terimi.png" alt="照味">
+              </div>
+              <dl>
+                <dt>照味</dt>
+                <dd>居酒屋</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/R" target="_blank">
+              <div class="pict">
+                <img src="./img/R.png" alt="R">
+              </div>
+              <dl>
+                <dt>R</dt>
+                <dd>バー</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/masquerade" target="_blank">
+              <div class="pict">
+                <img src="./img/masquerade.png" alt="バー・マスカレード">
+              </div>
+              <dl>
+                <dt>バー・マスカレード</dt>
+                <dd>バー</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="./detail/fermata" target="_blank">
+              <div class="pict">
+                <img src="./img/fermata.png" alt="イタリア料理店 カフェレストラン fermata">
+              </div>
+              <dl>
+                <dt>イタリア料理店 カフェレストラン fermata</dt>
+                <dd>イタリアン</dd>
+                <dd>パスタ</dd>
+                <dd>バー</dd>
+              </dl>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <p class="copy">☆ jigokudani.net</p>
+    </footer>
+  </body>
+</html>
+
+<script>
+function information(){
+	let date = new Date();
+	alert(date.toLocaleDateString() + " 現在、最新情報はありません");
+}
+</script>
