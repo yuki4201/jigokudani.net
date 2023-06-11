@@ -4,8 +4,8 @@
     <title>地獄谷 </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-F00MC1WG8L"></script>
     <script>
@@ -15,14 +15,56 @@
       gtag('config', 'G-F00MC1WG8L');
     </script>
   </head>
+  <header class="site-header">
+    <div class="site-header__wrapper">
+      <div class="site-header__start">
+        <a href="#"><img class="logo" src="./img/jigokudani.jpg" alt="地獄谷"></a>
+      </div>
+      <div class="site-header__middle">
+        <nav class="nav">
+          <button class="nav__toggle" aria-expanded="false" type="button" aria-haspopup="true" aria-label="menu">
+            menu
+          </button>
+          <ul class="nav__wrapper">
+            <li class="nav__item">
+              <a href="/index">
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="/index">
+                <span>XXXXX</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="/index">
+                <span>XXXXX</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="/index">
+                <span>XXXXX</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="/index">
+                <span>XXXXX</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="/index">
+                <span>XXXXX</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
   <body>
     <main class="main-contents">
-      <script src="./js/main.js"></script>
       <div class="infoArea">
-        <h2>
-          <img src="./img/jigokudani.jpg" alt="地獄谷">
-        </h2>
-        <p>阪神野田駅または地下鉄野田阪神駅を出て徒歩5分<br>そこには大阪市福島区吉野の通称<br>「地獄谷」という呑み屋街があります。<br><br>古民家と酒場が共存するこの一角は<br>昭和の雰囲気を色濃く残すレトロな呑み屋街として、<br>今もその姿を現代に語り継いでいます。</p>
+      <p>阪神野田駅または地下鉄野田阪神駅を出て徒歩5分<br>そこには大阪市福島区吉野の通称<br>「地獄谷」という呑み屋街があります。<br><br>古民家と酒場が共存するこの一角は<br>昭和の雰囲気を色濃く残すレトロな呑み屋街として、<br>今もその姿を現代に語り継いでいます。</p>
       </div>
       <div class="mapArea">
         <x-sign>
@@ -552,5 +594,6 @@
     <footer>
       <div class="copy">☆ <span id="western_year"></span> jigokudani.net</div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
