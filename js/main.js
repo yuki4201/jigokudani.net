@@ -56,13 +56,3 @@ function information() {
   let date = new Date();
   alert(date.toLocaleDateString() + " 現在、最新情報はありません");
 }
-
-function getCurrentYear() {
-  var currentYear = new Date().getFullYear();
-  return currentYear;
-}
-
-window.onload = function() {
-  var yearSpan = document.getElementById('western_year');
-  yearSpan.textContent = getCurrentYear();
-};
