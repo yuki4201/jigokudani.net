@@ -2,14 +2,158 @@
 body
 ========================================================= */
 
+@import url("https://fonts.googleapis.com/css2?family=Epilogue&display=swap");
+html {
+  font-size: 62.5%;
+  letter-spacing: 0.03em;
+  /* line-height: 1.3rem; */
+}
 body {
   margin: 0;
-  color: #fff;
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "游ゴシック体", "Yu Gothic", YuGothic, Meiryo, メイリオ, "Noto Sans JP", sans-serif;
-  background: #000;
+  background: #000000;
   -webkit-overflow-scrolling: touch;
   word-break: break-word;
   font-feature-settings: "palt";
+}
+img {
+  width: 100%;
+}
+
+@media print {
+  html, body {
+    _zoom: 70% !important;
+  }
+}
+
+/* =========================================================
+header
+========================================================= */
+
+.brand {
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+.site-header {
+  width: 100%;
+  position: fixed;
+  background-color: #000000;
+  display: block;
+  z-index: 1;
+}
+@media screen and (min-width: 940px) {
+  .site-header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #000000;
+  }
+}
+
+.logo {
+  width: 100px;
+  padding-left: 10px;
+}
+@media screen and (min-width: 940px) {
+  .logo {
+    width: 200px;
+    padding-left: 20px;
+  }
+}
+
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+span2 {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 940px) {
+  .nav__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 939px) {
+  .nav__wrapper {
+    position: absolute;
+    top: 75%;
+    right: 0;
+    left: -30px;
+    z-index: -1;
+    background-color: #000000;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  .nav__wrapper.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .nav__item {
+    min-width: 140px;
+  }
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+.nav__item a {
+  display: block;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid transparent;
+}
+@media screen and (min-width: 940px) {
+  .nav__item a {
+    text-align: center;
+    border-bottom: 4px solid transparent;
+  }
+}
+
+.nav__item.active a {
+  border-left-color: #222;
+}
+@media screen and (min-width: 940px) {
+  .nav__item.active a {
+    border-bottom-color: #222;
+  }
+}
+
+.nav__toggle {
+  background: rgb(240, 103, 255);
+  position: absolute;
+  right: 2rem;
+  top: 1.7rem;
+}
+@media screen and (min-width: 940px) {
+  .nav__toggle {
+    display: none;
+  }
+}
+
+.inactive-item {
+  opacity: 0;
 }
 
 /* =========================================================
@@ -17,8 +161,20 @@ main
 ========================================================= */
 
 main {
+  padding-top: 60px;
   display: block;
+  overflow: hidden;
+
 }
+@media screen and (min-width: 769px) {
+  main {
+    padding-top: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+  }
+}
+
 img {
   margin: 10%;
   width: 80%;
@@ -31,23 +187,7 @@ a {
 p {
   font-weight: bold;
   font-size: 20px;
-}
-.logo {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 20%;
-  display: block;
-  margin: auto;
-}
-
-@media (min-width: 769px) {
-  .logo {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 20%;
-    display: block;
-    margin: auto;
-  }
+  color: #fff;
 }
 
 /* =========================================================
@@ -129,11 +269,13 @@ info
   line-height: 1;
   font-weight: bold;
   letter-spacing: 0.04em;
+  color: #fff
 }
 
 @media (min-width: 769px) {
   .info-title .en {
     font-size: 32px;
+    color: #fff
   }
 }
 
@@ -154,11 +296,13 @@ info
 .menu-title {
   padding: 64px 0 1px;
   text-align: center;
+  color: #fff
 }
 
 @media (min-width: 769px) {
   .menu-title {
     padding: 40px 0 20px;
+    color: #fff
   }
 }
 
@@ -218,6 +362,7 @@ information-data
   font-weight: bold;
   letter-spacing: 0.1em;
   position: relative;
+  color: #fff
 }
 
 @media (min-width: 769px) {
@@ -225,6 +370,7 @@ information-data
     padding: 13px 0;
     font-size: 16px;
     line-height: 1.6875;
+    color: #fff
   }
 }
 
@@ -238,6 +384,7 @@ information-data
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+  color: #fff
 }
 
 @media (min-width: 769px) {
@@ -247,6 +394,7 @@ information-data
     margin: 0 0 0 100px;
     position: relative;
     transform: none;
+    color: #fff
   }
 }
 
@@ -307,6 +455,7 @@ information-data dt, dd
   width: 115px;
   font-weight: bold;
   font-size: 15px;
+  color: #ffffff;
 }
 
 @media (min-width: 769px) {
@@ -314,6 +463,7 @@ information-data dt, dd
     width: 170px;
     font-size: 15px;
     font-weight: bold;
+    color: #fff;
   }
 }
 
@@ -321,6 +471,8 @@ information-data dt, dd
   width: calc(100% - 115px);
   font-size: 15px;
   font-weight: bold;
+  color: #ffffff;
+  color: #fff;
 }
 
 @media (min-width: 769px) {
@@ -328,6 +480,7 @@ information-data dt, dd
     width: calc(100% - 170px);
     font-size: 15px;
     font-weight: bold;
+    color: #fff;
   }
 }
 
@@ -335,12 +488,14 @@ information-data dt, dd
   .information-data dd {
     /* display: flex; */
     align-items: center;
+    color: #fff;
   }
 }
 
 @media (min-width: 1025px) {
   .information-data dd br {
     display: none;
+    color: #fff;
   }
 }
 
@@ -348,27 +503,32 @@ information-data dt, dd
   .information-data dd .txt {
     width: 65%;
     padding: 0 5% 0 0;
+    color: #fff;
   }
 }
 
 @media (min-width: 1025px) {
   .information-data dd .link {
     width: 35%;
+    color: #fff;
   }
 }
 
 .information-data dd a {
   text-decoration: underline;
+  color: #fff;
 }
 
 @media (min-width: 769px) {
   .information-data dd a {
     font-size: 12px;
+    color: #fff;
   }
 }
 @media (min-width: 769px) {
   .information-data dd a[href*=tel] {
     display: none;
+    color: #fff;
   }
 }
 

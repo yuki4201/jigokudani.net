@@ -6,13 +6,15 @@ body
 html {
   font-size: 62.5%;
   letter-spacing: 0.03em;
-  line-height: 1.3rem;
+  /* line-height: 1.3rem; */
 }
 body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "游ゴシック体", "Yu Gothic", YuGothic, Meiryo, メイリオ, "Noto Sans JP", sans-serif;
   background-color: #000;
   color: #000;
-  font-family: system-ui, sans-serif;
-  font-size: 1rem;
+  /* font-family: system-ui, sans-serif;
+  font-size: 1rem; */
   -webkit-overflow-scrolling: touch;
 }
 img {
@@ -164,12 +166,14 @@ main {
   /*IE*/
 }
 .main-contents {
+  padding-top: 35px;
   overflow: hidden;
-  padding: 40px 0px;
 }
 @media screen and (min-width: 769px) {
   .main-contents {
-    padding: 100px 20px;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
     overflow: hidden;
   }
 }
@@ -179,7 +183,7 @@ infoArea
 ========================================================= */
 
 .infoArea {
-  margin: 34px auto 0;
+  margin: 10% auto 0;
   width: 100%;
   /* padding: 0 0 20vw; */
   position: relative;
@@ -226,7 +230,7 @@ infoArea
 
 @media screen and (min-width: 769px) {
   .infoArea {
-    margin: -30px auto -30px;
+    margin: -60px auto -30px;
     padding: 55px 0 5px;
   }
   .infoArea:before {
