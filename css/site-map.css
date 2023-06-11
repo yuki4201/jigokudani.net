@@ -1,0 +1,238 @@
+/* =========================================================
+body
+========================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Epilogue&display=swap");
+html {
+  font-size: 62.5%;
+  letter-spacing: 0.03em;
+  line-height: 1.3rem;
+}
+body {
+  background-color: #000;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+
+@media print {
+  html, body {
+    _zoom: 70% !important;
+  }
+}
+
+/* =========================================================
+header
+========================================================= */
+
+.brand {
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+.site-header {
+  width: 100%;
+  position: fixed;
+  background-color: #000000;
+  display: block;
+  z-index: 1;
+}
+@media screen and (min-width: 940px) {
+  .site-header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #000000;
+  }
+}
+
+.logo {
+  width: 100px;
+  padding-left: 10px;
+}
+@media screen and (min-width: 940px) {
+  .logo {
+    width: 200px;
+    padding-left: 20px;
+  }
+}
+
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+span {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 940px) {
+  .nav__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 939px) {
+  .nav__wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #000000;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  .nav__wrapper.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .nav__item {
+    min-width: 140px;
+  }
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+.nav__item a {
+  display: block;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid transparent;
+}
+@media screen and (min-width: 940px) {
+  .nav__item a {
+    text-align: center;
+    border-bottom: 4px solid transparent;
+  }
+}
+
+.nav__item.active a {
+  border-left-color: #222;
+}
+@media screen and (min-width: 940px) {
+  .nav__item.active a {
+    border-bottom-color: #222;
+  }
+}
+
+.nav__toggle {
+  background: rgb(240, 103, 255);
+  position: absolute;
+  right: 2rem;
+  top: 1.7rem;
+}
+@media screen and (min-width: 940px) {
+  .nav__toggle {
+    display: none;
+  }
+}
+
+.inactive-item {
+  opacity: 0;
+}
+
+/* =========================================================
+main
+========================================================= */
+
+main {
+  display: block;
+  overflow: hidden;
+  padding: 65px 20px;
+}
+@media screen and (min-width: 769px) {
+  main {
+    padding: 100px 20px;
+    overflow: hidden;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-spacing: 1px;
+}
+@media screen and (min-width: 769px) {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-around;
+  }
+}
+
+tr {
+  text-align: center;
+  height: 22px;
+}
+td {
+  width: 2.10084%;
+  text-align: left;
+  height: 22px;
+  font-weight: bold;
+  font-size: 15px;
+  color: blueviolet;
+}
+@media screen and (min-width: 769px) {
+  td {
+    width: 2.10084%;
+    text-align: left;
+    height: 22px;
+    font-weight: bold;
+    font-size: 20px;
+    color: blueviolet;
+  }
+}
+
+.link {
+  text-decoration: underline;
+  color: blueviolet;
+}
+.no_link {
+  color: rgb(68, 22, 112);
+}
+
+/* =========================================================
+footer
+========================================================= */
+
+footer {
+  padding: 8px 0 30px;
+  text-align: center;
+}
+footer .copy {
+  color: #fff;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 14px;
+}
