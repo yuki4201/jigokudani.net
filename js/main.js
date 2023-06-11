@@ -56,3 +56,8 @@ function information() {
   let date = new Date();
   alert(date.toLocaleDateString() + " 現在、最新情報はありません");
 }
+
+function notifications() {
+  let date = new Date();
+  alert(date.toLocaleDateString() + "現在、開発中につき閲覧不可");
+}

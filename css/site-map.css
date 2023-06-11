@@ -6,15 +6,16 @@ body
 html {
   font-size: 62.5%;
   letter-spacing: 0.03em;
-  line-height: 1.3rem;
+  /* line-height: 1.3rem; */
 }
 body {
-  background-color: #000;
-  color: rgb(0, 0, 0);
-  font-family: system-ui, sans-serif;
-  font-size: 1rem;
-  -webkit-overflow-scrolling: touch;
   margin: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "游ゴシック体", "Yu Gothic", YuGothic, Meiryo, メイリオ, "Noto Sans JP", sans-serif;
+  background-color: #000;
+  color: #000;
+  /* font-family: system-ui, sans-serif;
+  font-size: 1rem; */
+  -webkit-overflow-scrolling: touch;
 }
 img {
   width: 100%;
